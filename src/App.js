@@ -7,6 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <style>{'body { background-color: #f3f9ed; }'}</style>
       <Router>
         <NavBar/>
         <Routes>

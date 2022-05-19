@@ -3,7 +3,7 @@ import './Goal.css'
 
 const Goal = ({name}) => {
     return (
-        <button className="goal">
+        <button className="goal" onclick="updateSelection({goal})">
             {name}
         </button>
     )
