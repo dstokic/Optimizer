@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Preferences from './components/Preferences';
+import Results from './components/Results';
 import NavBar from './components/NavBar';
 import './App.css';
 
@@ -12,6 +13,7 @@ function App() {
         <NavBar/>
         <Routes>
           <Route path="/" element= {<Preferences/>}></Route>
+          <Route path="/results" element= {<Results/>}></Route>
         </Routes>
       </Router>
     </div>
