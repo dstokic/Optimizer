@@ -3,9 +3,9 @@ import './Goal.css'
 
 const Goal = ({name}) => {
     return (
-        <div className="goal">
-            <p className="goalName">{name}</p>
-        </div>
+        <button className="goal" onclick="updateSelection({goal})">
+            {name}
+        </button>
     )
 }
 

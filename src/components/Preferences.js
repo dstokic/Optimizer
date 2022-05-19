@@ -1,22 +1,28 @@
-import {useEffect, useState} from 'react'
+// import {useEffect, useState} from 'react'
 import Goal from './Goal'
 import './Preferences.css'
 
 const Preferences = () => {
-    const [data, setData] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:8080/api/movies')
-        .then(response => response.json())
-        .then(json => setData(json))
-    }, [])
+    const goals = ["Save", "Build Credit", "Earn Rewards"];
+    var selection;
+
+    function updateSelection(goal) {
+        selection = goal;
+        console.log(selection);
+    }
+
     return (
         <div>
             <h1 className="title">Choose a Goal</h1>
             <div className="goals">
-                {data.map((goal) => (
-                    <Goal name={goal.name}/>
+                {goals.map((goal) => (
+                        <button className="goal" onclick="{selection = {goal}}">
+                            {goal}
+                        </button>
                 ))}
             </div>
+            <br></br>
+            <button className="button" onclick="window.location.href='/results';">Next</button>
         </div>
     )
 }
