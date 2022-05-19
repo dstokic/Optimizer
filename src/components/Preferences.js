@@ -3,7 +3,7 @@ import Goal from './Goal'
 import './Preferences.css'
 
 const Preferences = () => {
-    const goals = ["Travel", "Save", "Entertainment"];
+    const goals = ["Save", "Build Credit", "Earn Rewards"];
     var selection;
 
     function updateSelection(goal) {
@@ -16,7 +16,7 @@ const Preferences = () => {
             <h1 className="title">Choose a Goal</h1>
             <div className="goals">
                 {goals.map((goal) => (
-                        <button className="goal" onclick="selection = {goal}">
+                        <button className="goal" onclick="{selection = {goal}}">
                             {goal}
                         </button>
                 ))}
