@@ -1,5 +1,5 @@
 import React from 'react'
-import './Movie.css'
+import './Card.css'
 
 const Card = ({id, name, brand, image, annualFee, creditScoreReq, benefits}) => {
     return (
