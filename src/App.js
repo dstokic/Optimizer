@@ -15,7 +15,7 @@ export default function App() {
 			questionText: 'Where does your credit score fall into?',
 			answerOptions: [
 				{ answerText: 'No Credit Score', caterTo: ['minCreditScore', 0]},
-				{ answerText: '-499', caterTo: ['minCreditScore', 499]},
+				{ answerText: '300-499', caterTo: ['minCreditScore', 499]},
 				{ answerText: '500-699', caterTo: ['minCreditScore', 699]},
 				{ answerText: '700-', caterTo: ['minCreditScore', 800]},
 			],
