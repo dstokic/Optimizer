@@ -87,15 +87,15 @@ export default function App() {
 	const handleAnswerOptionClick = (caterTo) => {
     setScore(0);
 		// for each card in cards, filter
-    let i = 0;
-    while (i < cards.length) { // go through cards
+    for (let i = 0; i < cards.length; i++) { // go through cards
       let card = cards[i];
       // go through properties to compare
-      for (let propertyIdx = 0; propertyIdx < caterTo.length; propertyIdx += 1) {
+      for (let propertyIdx = 0; propertyIdx < caterTo.length; propertyIdx ++) {
         let property = caterTo[propertyIdx][0];
         let value = caterTo[propertyIdx][1];
         filterCards(card, property, value);
       }
+
     }
 		const nextQuestion = currentQuestion + 1;
 
