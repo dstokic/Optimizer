@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Card from './Card';
+import './App.css';
+import ShowCard from './ShowCard';
 
 export default function App() {
 	const questions = [
@@ -37,8 +39,11 @@ export default function App() {
     {
 			questionText: 'Choose a bank you have established a history with.',
 			answerOptions: [
-				{ answerText: 'Bank1', caterTo: ['bank', 'Bank1']},
-        { answerText: 'Bank2', caterTo: ['bank', 'Bank2']},
+				{ answerText: 'Capital One', caterTo: ['bank', 'Bank1']},
+        { answerText: 'Wells Fargo', caterTo: ['bank', 'Bank2']},
+		{ answerText: 'Citi', caterTo: ['bank', 'Bank2']},
+		{ answerText: 'Another Bank', caterTo: ['bank', 'Bank1']},
+		{ answerText: 'No history', caterTo: ['bank', 'Bank1']},
 			],
 		},
 	];
@@ -109,7 +114,7 @@ export default function App() {
 		<div className='app'>
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					<ShowCard/>
 				</div>
 			) : (
 				<>

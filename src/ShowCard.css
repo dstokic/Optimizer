@@ -1,0 +1,20 @@
+h1{
+    font-size: 1.25em;
+    text-align: center;
+}
+
+img{
+    object-fit: fill;
+    height: 10em;
+    width: auto;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.description{
+    font-size: 0.70em;
+}
+
+.bottom{
+    text-align: center;
+}
